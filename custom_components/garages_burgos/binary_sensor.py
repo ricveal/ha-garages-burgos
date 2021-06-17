@@ -66,7 +66,7 @@ class GaragesburgosBinarySensor(CoordinatorEntity, BinarySensorEntity):
     def is_on(self) -> bool:
         """If the binary sensor is currently on or off."""
         return (
-            getattr(self.coordinator.data[self._name], self._info_type) != "ok"
+            getattr(self.coordinator.data[self._name], self._info_type) != "Available"
         )
 
     @property

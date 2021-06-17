@@ -17,10 +17,8 @@ from . import get_coordinator
 from .const import ATTRIBUTION
 
 SENSORS = {
-    "free_space_short": "mdi:car",
-    "free_space_long": "mdi:car",
-    "short_capacity": "mdi:car",
-    "long_capacity": "mdi:car",
+    "free_space": "mdi:car",
+    "total_capacity": "mdi:car",
 }
 
 
