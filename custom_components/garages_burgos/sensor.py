@@ -73,7 +73,7 @@ class GaragesburgosSensor(CoordinatorEntity, SensorEntity):
         )
 
     @property
-    def state(self) -> str:
+    def state(self) -> int:
         """Return the state of the sensor."""
         return getattr(self.coordinator.data[self._name], self._info_type)
 
