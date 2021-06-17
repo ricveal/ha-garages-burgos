@@ -39,7 +39,7 @@ async def get_coordinator(
         return hass.data[DOMAIN]
 
     async def async_get_garages():
-        with async_timeout.timeout(10):
+        with async_timeout.timeout(30):
             return {
                 garage.name: garage
                 for garage in await garages_burgos.get_garages(
