@@ -52,6 +52,7 @@ class GaragesburgosSensor(CoordinatorEntity, SensorEntity):
         """Initialize garages Burgos sensor."""
         super().__init__(coordinator)
         self._unique_id = f"{name}-{info_type}"
+        self._garage_name = name
         self._info_type = info_type
         self._name = f"{name} - {info_type}".replace("_", " ")
 
@@ -69,13 +70,13 @@ class GaragesburgosSensor(CoordinatorEntity, SensorEntity):
     def available(self) -> bool:
         """Return if sensor is available."""
         return self.coordinator.last_update_success and (
-            self._name in self.coordinator.data
+            self._garage_name in self.coordinator.data
         )
 
     @property
     def state(self) -> int:
         """Return the state of the sensor."""
-        return getattr(self.coordinator.data[self._name], self._info_type)
+        return getattr(self.coordinator.data[self._garage_name], self._info_type)
 
     @property
     def icon(self) -> str:
