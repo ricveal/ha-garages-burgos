@@ -52,7 +52,7 @@ async def get_coordinator(
         logging.getLogger(__name__),
         name=DOMAIN,
         update_method=async_get_garages,
-        update_interval=timedelta(minutes=10),
+        update_interval=timedelta(minutes=5),
     )
     await coordinator.async_config_entry_first_refresh()
 
