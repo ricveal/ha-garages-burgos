@@ -1,0 +1,9 @@
+{
+  "domain": "garages_burgos",
+  "name": "Garages Burgos",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/garages_burgos",
+  "requirements": ["garages-burgos==1.0.0"],
+  "codeowners": ["@ricveal"],
+  "iot_class": "cloud_polling"
+}
