@@ -4,7 +4,9 @@ Retrieve the status of the Public Parkings in Burgos, Spain.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Parking Information](./images/info.png)
+
+![Parking Chart](./images/chart.png)
 
 ## Acknowledgements
 
